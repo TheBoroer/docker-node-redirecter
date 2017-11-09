@@ -5,6 +5,6 @@ require('http').createServer(function (request, response) {
     else
       var newLocation = process.env.REDIRECT_TO;
     
-    response.writeHead(301, {"Location":  + newLocation});
+    response.writeHead(301, {"Location": newLocation});
     response.end();
 }).listen(80);
